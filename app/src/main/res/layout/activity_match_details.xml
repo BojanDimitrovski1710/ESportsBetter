@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".add_activities.AddMatchActivity">
+
+    <LinearLayout
+        android:id="@+id/topGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_person_outline_24"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/matchDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topGroup"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Match Details"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/informationGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/matchDetails"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/homeTeamNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Team Name"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/homeTeamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeTeamNameLabel"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:id="@+id/awayTeamNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Away Team Name"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/awayTeamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/awayTeamNameLabel"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isFinished"
+                android:width="50dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Finished"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/finishedTeamGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/homeTeamRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+                <RadioButton
+                    android:id="@+id/awayTeamRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Away"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/placeBetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/updateMatchBtn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Place Bet" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updateMatchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Update Match" />
+
+
+</RelativeLayout>

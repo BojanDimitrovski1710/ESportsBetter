@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".add_activities.AddTeamActivity">
+
+    <LinearLayout
+        android:id="@+id/topGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_person_outline_24"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topGroup"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Add Team"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/informationGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addTeam"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/teamNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Name"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/teamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teamNameLabel"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:id="@+id/teamDifferencialLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Differencial"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/teamDifferencial"
+            android:inputType="numberSigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teamDifferencialLabel"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_numbers_24"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/addTeamBtn"
+        android:text="Add Team" />
+
+</RelativeLayout>

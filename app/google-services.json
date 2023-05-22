@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993434007266",
+    "project_id": "esportsbetting-379715",
+    "storage_bucket": "esportsbetting-379715.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993434007266:android:8e28661b2c49acd77fd0bb",
+        "android_client_info": {
+          "package_name": "com.example.esbttr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993434007266-ngje0046v3v4uc9i1rpu3i5m59seot4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL9UqqPcJxa0KUPfyQkRu0gir3KNpmkqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993434007266-ngje0046v3v4uc9i1rpu3i5m59seot4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
